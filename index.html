@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm App</title>
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <!-- styles for alarm app -->
+    <link rel="stylesheet" href="alarm.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- display for time -->
+        <div class="timer">00:00:00 PM</div>
+        <div class="alarms-container">
+            <!-- add alarm -->
+            <div class="input-container">
+                <input type="number" id="hourInput" placeholder="00" min="1" max="12" />
+                <input type="number" id="minuteInput" placeholder="00" min="0" max="59" />
+                <input type="number" id="secondInput" placeholder="00" min="0" max="59" />
+                <select>
+                    <option value="AM/PM" selected disabled hidden>AM/PM</option>
+                </select>
+            </div>
+            <button id="btn-add">Add Alarm</button>
+            <!-- alarms list -->
+            <div class="alarms"></div>
+        </div>
+    </div>
+
+</body>
+<!-- javascript for alarm App -->
+<script src="alarm.js"></script>
+
+</html>
